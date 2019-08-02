@@ -1,7 +1,7 @@
 {
-  "name": "@mivia/promise-button",
-  "version": "1.0.3",
-  "description": "Promise-button",
+  "name": "@mivia/react-promise-button",
+  "version": "1.0.1",
+  "description": "react-romise-button",
   "main": "dist/PromiseButton.js",
   "source": "src/PromiseButton.jsx",
   "scripts": {
@@ -70,6 +70,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mivia/promise-button.git"
+    "url": "https://github.com/mivia/react-promise-button.git"
   }
 }
