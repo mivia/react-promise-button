@@ -1,6 +1,6 @@
 {
   "name": "@mivia/promise-button",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Promise-button",
   "main": "dist/PromiseButton.js",
   "source": "src/PromiseButton.jsx",
