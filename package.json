@@ -1,7 +1,7 @@
 {
   "name": "@mivia/promise-button",
   "version": "1.0.3",
-  "description": "Stateful button",
+  "description": "Promise-button",
   "main": "dist/PromiseButton.js",
   "source": "src/PromiseButton.jsx",
   "scripts": {
