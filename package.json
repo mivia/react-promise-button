@@ -1,0 +1,75 @@
+{
+  "name": "@mivia/promise-button",
+  "version": "1.0.3",
+  "description": "Stateful button",
+  "main": "dist/PromiseButton.js",
+  "source": "src/PromiseButton.jsx",
+  "scripts": {
+    "build": "babel src -d dist --ignore **/__tests__,**/**/__tests__",
+    "clean": "rimraf dist",
+    "jest": "jest",
+    "jest-coverage": "jest --coverage",
+    "lint": "eslint src/ --ext .jsx,.js",
+    "prepublishOnly": "yarn clean && yarn build",
+    "test": "yarn lint && yarn jest"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "collectCoverageFrom": [
+      "**/src/**.{js,jsx}"
+    ]
+  },
+  "author": {
+    "name": "Michał Wiaderek",
+    "email": "wiaderekmichal@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Wojciech Maj",
+      "email": "kontakt@wojtekmaj.pl"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "make-cancellable-promise": "^1.0.0",
+    "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "8.2.6",
+    "babel-jest": "^24.8.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-async-helpers": "^0.9.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.14.2",
+    "jest": "^24.8.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rimraf": "^2.6.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/",
+    "src/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mivia/promise-button.git"
+  }
+}
