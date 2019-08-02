@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { waitForState } from 'enzyme-async-helpers';
 
-import PromiseButton from './PromiseButton';
-import BUTTON_STATES from './constants';
+import PromiseButton from '../PromiseButton';
+import BUTTON_STATES from '../constants';
 
 describe('<PromiseButton /> component', () => {
   const onClickSuccess = jest.fn(() => Promise.resolve());
