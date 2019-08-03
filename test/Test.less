@@ -1,0 +1,93 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  @blue: #03a9f4;
+  @orange: #FFC107;
+  @red: #F44336;
+  @green: #5edc1f;
+
+  color: white !important;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0;
+  padding: 0.5em 0.75em;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.15s linear;
+
+  &.blue {
+    background-color: @blue;
+    border: 2px solid @blue;
+
+    &:hover {
+      background-color: #14b4fc;
+    }
+  }
+
+  &.orange {
+    background-color: @orange;
+    border: 2px solid @orange;
+
+    &:hover {
+      background-color: #ffc721;
+    }
+  }
+
+  &.red {
+    background-color: @red;
+    border: 2px solid @red;
+
+    &:hover{
+      background-color: #f55a4e;
+    }
+  }
+
+  &.green {
+    background-color: @green;
+    border: 2px solid @green;
+
+    &:hover {
+      background-color: #7EF943;
+    }
+  }
+}
+
+.Container {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-rows: repeat(1, 200px);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  p {
+    font-size: 14px;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #F0F0F0;
+  }
+
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+}

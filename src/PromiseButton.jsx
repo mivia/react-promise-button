@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import makeCancellable from 'make-cancellable-promise';
+import classNames from 'classnames';
 
 import BUTTON_STATES from './constants';
 
@@ -105,8 +106,7 @@ export default class StatefulButton extends Component {
     const { buttonConfig } = this;
     const { buttonState } = this.state;
     const { className, children } = this.props;
-
-    const buttonClassName = buttonConfig.className || className;
+    const buttonClassName = classNames(className, buttonConfig.className);
     const buttonChildren = buttonConfig.children || children;
 
     return (
