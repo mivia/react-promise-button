@@ -2,31 +2,38 @@ import React, { PureComponent } from 'react';
 import PromiseButton from '@mivia/react-promise-button';
 
 import './Test.less';
+import warningIcon from './static/warning.svg';
+import loadingIcon from './static/loading.svg';
+import tickIcon from './static/tick.svg';
 
 const pendingConfig = {
   className: 'orange',
   children: (
-    <span>
-      Pending!
-    </span>
+    <img alt="loading icon" src={loadingIcon} />
   ),
 };
 
 const successConfig = {
   className: 'green',
   children: (
-    <span>
-      Success done!
-    </span>
+    <>
+      <span>
+        Success done!
+      </span>
+      <img alt="tick icon" className="TickIcon" src={tickIcon} />
+    </>
   ),
 };
 
 const errorConfig = {
   className: 'red',
   children: (
-    <span>
-      Error done!
-    </span>
+    <>
+      <span>
+        Error done!
+      </span>
+      <img alt="warning icon" className="WarningIcon" src={warningIcon} />
+    </>
   ),
 };
 
@@ -46,7 +53,8 @@ export default class Test extends PureComponent {
   renderNoPendingConfigButton = () => (
     <>
       <p>
-        Callback function returning resolving promise triggers only success config when pending config was not provided
+        Callback function returning resolving promise triggers only
+        success or error config when pending config was not provided:
       </p>
       <PromiseButton
         className="blue"
@@ -78,7 +86,7 @@ export default class Test extends PureComponent {
   renderSuccessButton = () => (
     <>
       <p>
-        Callback function returning resolving promise triggers pending & success config
+        Callback function returning resolving promise triggers pending & success config:
       </p>
       <PromiseButton
         className="blue"
@@ -94,7 +102,7 @@ export default class Test extends PureComponent {
   renderErrorButton = () => (
     <>
       <p>
-        Callback function returning rejecting promise triggers pending & error config
+        Callback function returning rejecting promise triggers pending & error config:
       </p>
       <PromiseButton
         className="blue"
