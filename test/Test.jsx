@@ -2,9 +2,9 @@ import React, { PureComponent } from 'react';
 import PromiseButton from '@mivia/react-promise-button';
 
 import './Test.less';
-import warningIcon from './static/warning.svg';
-import loadingIcon from './static/loading.svg';
-import tickIcon from './static/tick.svg';
+import warningIcon from './warning.svg';
+import loadingIcon from './loading.svg';
+import tickIcon from './tick.svg';
 
 const pendingConfig = {
   className: 'orange',
