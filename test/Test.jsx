@@ -118,7 +118,7 @@ export default class Test extends PureComponent {
   render() {
     return (
       <>
-        <h2>React-Promise-Button preview</h2>
+        <h2>React-Promise-Button</h2>
         <div className="Container">
           <div className="Button-wrapper">
             {this.renderSuccessButton()}

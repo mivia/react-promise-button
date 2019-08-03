@@ -5,6 +5,7 @@ A promise-button for you react app.
 ## Installation
 Add react-promise-button to your project by executing `npm install @mivia/react-promise-button` or `yarn add @mivia/react-promise-button`.
 ## Demo
+[Preview](https://mivia.github.io/react-promise-button/) available!
 ## Usage
 Here's an example of basic usage:
 ```js
