@@ -17,9 +17,6 @@
     "setupFiles": [
       "<rootDir>/jest.setup.js"
     ],
-    "collectCoverageFrom": [
-      "**/src/**.{jsx}"
-    ],
     "testRegex": "/src/.*.spec.jsx"
   },
   "author": {
