@@ -1,6 +1,6 @@
 {
   "name": "@mivia/react-promise-button",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react-romise-button",
   "main": "dist/PromiseButton.js",
   "source": "src/PromiseButton.jsx",
@@ -19,6 +19,14 @@
     ],
     "testRegex": "/src/.*.spec.jsx"
   },
+  "keywords": [
+    "button",
+    "promise",
+    "promise button",
+    "react button",
+    "state button",
+    "stateful"
+  ],
   "author": {
     "name": "Michał Wiaderek",
     "email": "wiaderekmichal@gmail.com"
