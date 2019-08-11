@@ -55,9 +55,9 @@ export default class Example extends Component {
 |Prop name|Description|Default value|Example values|
 |----|----|----|----|
 |className|Class name(s) that will be added to the button element.|n/a|`"class1 class2"`|
-|onClick|A required callback function returning a promise.|n/a|() => Promise.resolve()|
-|pendingConfig|Config including className and children that decorates the button when promise is pending.|||
-|successConfig|Config including className and children that decorates the button when promise has been successful.|||
-|errorConfig|Config including className and children that decorates the button when promise has failed.|||
+|onClick|A required callback function returning a promise.|n/a|`() => Promise.resolve()`|
+|pendingConfig|Config including className and children that decorates the button when promise is pending.|n/a|`{className: "PromiseButton--pending", children: (<h2>Pending!</h2>)}`|
+|successConfig|Config including className and children that decorates the button when promise has been successful.|n/a|`{className: "PromiseButton--success", children: (<h2>Success!</h2>)}`|
+|errorConfig|Config including className and children that decorates the button when promise has failed.|n/a|`{className: "PromiseButton--error", children: (<h2>Error!</h2>)}`|
 |refreshTimeout|Time that has to pass before switching back to initial config of the button after the promise is done, in miliseconds.|`2000`|`3000`|
 
